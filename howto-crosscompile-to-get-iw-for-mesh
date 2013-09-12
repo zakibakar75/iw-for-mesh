@@ -1,0 +1,92 @@
+In order to run 11s mesh version 0.4.2, you need to download kernel, iw and authsae from :
+http://www.o11s.org/trac/wiki/RELEASE_NOTES-0.4.2
+
+To cross compile the downloaded iw and authsae, you will need libnl version 3.  For me i am using libnl-3.2.1 downloaded from libnl website : http://www.infradead.org/~tgr/libnl/ .The stable version published in the website as of 23 October 2011 is libnl-3.2.1 . You need to also download libconfig.  I downloaded version 1.3.2 at https://launchpad.net/ubuntu/+source/libconfig/1.3.2-2ubuntu2, taking only "libconfig_1.3.2.orig.tar.gz" for cross compiling.
+
+Note : Before i start cross-compiling, i tried build all the downloaded items and install them in my Ubuntu Linux.  Below is my Ubuntu Linux setting :
+1) Machine : DELL Latitude E6410
+2) Ubuntu Version : 11.04 - Natty Narwhal
+3) Kernel Version : 2.6.38-8-generic
+
+Building all under Ubuntu is flawless.  Only one thing i discover, libconfig needs to be 1.3.2 version as the latest one doesn't contain necessary code that is needed.  So stick with 1.3.2, yeah.  Building under Ubuntu is easy because anything u need u can just sudo apt-get install things.  Life is easier here....
+
+Now, let's do cross-compiling.  As usual, i expect things to be complicated and indeed it is :-)
+First, let's view my target details :
+1) Processor : Freescale MPC8315
+2) Cross-toolchain : opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu
+
+In order to build and install iw and authsae, libnl3 and libconfig needs to be built first.
+
+Step to cross-compile libnl3 :
+
+1) Extract libnl-3.2.1.tar.gz to Desktop, so you will have libnl-3.2.1 folder on your Desktop.
+
+2) You will install the libnl on your own folder, meaning all the necessary files and libraries will eventually be on your own folder.  For me, i created a folder name libnl321.
+
+3) Inside the libnl321 folder, i created a "usr/lib" and "usr/include" folder.  If anything the compiler complains it cannot find, i copy the file from my Ubuntu and put it inside there...normally headers goes into "usr/include". Then i point my C_INLCUDE_PATHS to that folder.  Incrementally, as the build goes, i copied over many many files into there...hehe.  Not sure if this is a stupid move or not, but it is my learning process to actually understand the whole cross-compiling stuff.
+
+4) To build using cross-compiling and to point the installation to the newly created folder, issue this at command prompt :
+> export PATH=$PATH:/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/bin/
+> ./configure --host=powerpc-e300c3-linux-gnu --prefix=/home/dell/Desktop/libnl321
+> C_INCLUDE_PATH=.:/home/dell/Desktop/iw3related/libnl321/asm:/home/dell/Desktop/iw3related/libnl321/include/libnl3:/home/dell/Desktop/iw3related/libnl321/usr/include
+> export C_INCLUDE_PATH
+> make && make install
+
+5) I got one problem with gcc-4.1.78-eglibc-2.5.78-1 if i am not mistaken.. st_atim problem i think.  Sorry, i forgot to jot it down.  I solved that by adding some #if def XOPEN thing in one file that deal with time.  The solution came from one of the forum in web.  Just google it and you will find similar answer as what i describe here, more or less.
+
+
+Step to cross-compile libconfig :
+1) Almost same step as the above.
+
+Step to cross-compile iw (please see Note below) :
+
+Note : By default, when you build iw or others that are dependent on libnl, the compiler will search for libnl-3.0.pc to find the required destination that contains all the libnl3.0 libraries.  In my case of Ubuntu, the libnl-3.0.pc is located in /usr/local/lib/pkgconfig.  Modify it to become like this :
+
+prefix=/home/dell/Desktop/libnl321
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libnl
+Description: Convenience library for netlink sockets
+Version: 3.0
+Libs: -L${libdir} -lnl-3
+Cflags: -I${includedir}
+
+It should now point to the folder where we installed our libnl.
+
+
+
+1) Create a .config file in the iw folder.
+2) In the file, insert this :
+CROSS_COMPILE=powerpc-e300c3-linux-gnu-
+CC=$(CROSS_COMPILE)gcc
+3) make
+4) Done, you will see "iw" application in there.  Try execute that : ./iw ,PC will throw error like this :
+bash: ./iw: cannot execute binary file.  Awesome.  This is right because this particular iw shouldn't be working on x686 or PC.  The binary is meant for powerpc.
+
+Step to cross-compiling authsae :
+1) Edit the Makefile top portion to be like this :
+
+CFLAGS += -g -DLINUX -Wall -Werror -I..
+LDFLAGS += -L/home/dell/Desktop/libnl321/usr/lib
+LDFLAGS += -L/home/dell/Desktop/libnl321/lib
+PREFIX ?= /home/dell/Desktop/libnl321/usr/
+CROSS_COMPILE=powerpc-e300c3-linux-gnu-
+CC=$(CROSS_COMPILE)gcc
+
+2) make
+3) Done.  Do the same to verify the binary.
+
+
+
+Note : From my experience, when the linker failed to locate certain libraries : it will prompt as error below :>  ld: cannot find -lnl , what it means is that the linker (ld) cannot find "libnl.a" from our folder.  First step is to go inside the Makefile and make the LDFLAGS point to the folder that contains "libnl.a".  Sometimes, libnl.a never exist after u install libnl3.0, the one exist is "libnl3.0.a" but why is is looking for libnl?.... go back to /usr/local/lib/pkgconfig/libnl-3.0.pc, look at : "Libs: -L${libdir}".  If it put "-lnl", then you need to change it to "-lnl-3.0" to make it point to "libnl3.0.a".  Pheww...what a mess.
+
+The most important point when doing cross-compiling is :
+1) never forget to check the makefile to contain CROSS_COMPILE and the GCC is NOT using only gcc.  It should have ($CROSS_COMPILE)gcc.
+2) Alert about the "header is not found problem".  Feel free to copy any header it is looking at create a subfolder in your "libnl321 folder" then paste the header under the subfolder you created.  Then don't forget to update your C_INCLUDE_PATHS to point to this subfolder.  Don't forget to export the C_INCLUDE_PATHS.
+3) Alert about library not found.  I explained that in the note above.
+4) Another important thing to note that while in pkgconfig you specify the libdir.  Like my case, i put it is ${exec_prefix}/lib.  At that point of time, i just simply put.  The real thing that is going to happen is that in case of your target.  The iw will search for the libararies it needs in /lib folder.  First level of <lib> folder.  Well, i supposed to put it like ${exec_prefix}/usr/local/lib so that it will be remote a bit from the upstream libraries. I can change that, though...but a bit lazy to re-do the steps, so let it be in first level of <lib> folder, then.
+5) OK, so what you need to do is to copy the libraries in the /lib folder into your target first level <lib> folder.  Copy all the .a and .so stuff.  For the iw, you can put it anywhere you like.  I put it in /usr/sbin.
+6) Hostapd will use different libnl from us.....so, make sure their libnl also exists in the same or different folder from our libnl.
+

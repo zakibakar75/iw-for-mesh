@@ -1,0 +1,460 @@
+route/cls/police.lo route/cls/police.o: route/cls/police.c \
+  ../include/netlink-local.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/stdio.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/features.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/predefs.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/cdefs.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/wordsize.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/gnu/stubs.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/gnu/stubs-32.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/lib/gcc/powerpc-e300c3-linux-gnu/4.1.2/include/stddef.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/types.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/typesizes.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/libio.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/_G_config.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/wchar.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/wchar.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/lib/gcc/powerpc-e300c3-linux-gnu/4.1.2/include/stdarg.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/stdio_lim.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/sys_errlist.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/errno.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/errno.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/errno.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/errno.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/errno.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/errno-base.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/stdlib.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/waitflags.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/waitstatus.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/endian.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/endian.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/byteswap.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/byteswap.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/xlocale.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/types.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/time.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/select.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/select.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/sigset.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/time.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/sysmacros.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/pthreadtypes.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/alloca.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/string.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/string.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/string2.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/unistd.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/posix_opt.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/environments.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/confname.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/getopt.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/fcntl.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/fcntl.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/uio.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/stat.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/stat.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/time.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/math.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/huge_val.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/huge_valf.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/huge_vall.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/inf.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/nan.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/mathdef.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/mathcalls.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/ctype.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/socket.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/uio.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/socket.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/limits.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/lib/gcc/powerpc-e300c3-linux-gnu/4.1.2/include-fixed/limits.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/posix1_lim.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/local_lim.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/limits.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/posix2_lim.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/xopen_lim.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/sockaddr.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/socket.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/sockios.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/inttypes.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/stdint.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/assert.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/search.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/arpa/inet.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/netinet/in.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/in.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/netdb.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/rpc/netdb.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/siginfo.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/netdb.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/types.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/types.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/int-ll64.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/bitsperlong.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/bitsperlong.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/posix_types.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/stddef.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/posix_types.h \
+  ../include/linux/if.h ../include/linux/if_arp.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/netdevice.h \
+  ../include/linux/if_ether.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/if_packet.h \
+  ../include/linux/if_link.h ../include/linux/netlink.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/socket.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/ethtool.h \
+  ../include/linux/pkt_sched.h ../include/linux/pkt_cls.h \
+  ../include/linux/gen_stats.h ../include/linux/ip_mp_alg.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/atm.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/atmapi.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/atmsap.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/atmioc.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/ioctl.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/ioctl.h \
+  ../include/linux/inetdevice.h ../include/linux/ipv6.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/byteorder.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/byteorder/big_endian.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/swab.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/asm/swab.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/compiler.h \
+  ../include/linux/snmp.h ../include/netlink/netlink.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/poll.h \
+  /opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/poll.h \
+  ../include/netlink/netlink-compat.h ../include/linux/rtnetlink.h \
+  ../include/linux/if_addr.h ../include/linux/neighbour.h \
+  ../include/linux/genetlink.h ../include/linux/netfilter/nfnetlink.h \
+  ../include/netlink/version.h ../include/netlink/errno.h \
+  ../include/netlink/types.h ../include/netlink/handlers.h \
+  ../include/netlink/netlink-kernel.h ../include/netlink/socket.h \
+  ../include/netlink/object.h ../include/netlink/utils.h \
+  ../include/netlink/list.h ../include/netlink/cache-api.h \
+  ../include/netlink/cache.h ../include/netlink/msg.h \
+  ../include/netlink/attr.h ../include/netlink/addr.h \
+  ../include/netlink/data.h ../include/netlink/route/tc.h \
+  ../include/netlink/route/link.h ../include/netlink/object-api.h \
+  ../include/netlink-types.h ../include/netlink/route/qdisc.h \
+  ../include/netlink/route/rtnl.h ../include/netlink/route/route.h \
+  ../include/netlink/route/nexthop.h \
+  /home/dell/Desktop/iw3related/libnl321/usr/include/linux/in_route.h \
+  ../include/netlink/route/tc-api.h ../include/netlink-tc.h \
+  ../include/netlink/route/classifier.h \
+  ../include/netlink/route/cls/police.h
+
+../include/netlink-local.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/stdio.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/features.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/predefs.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/cdefs.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/wordsize.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/gnu/stubs.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/gnu/stubs-32.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/lib/gcc/powerpc-e300c3-linux-gnu/4.1.2/include/stddef.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/types.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/typesizes.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/libio.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/_G_config.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/wchar.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/wchar.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/lib/gcc/powerpc-e300c3-linux-gnu/4.1.2/include/stdarg.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/stdio_lim.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/sys_errlist.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/errno.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/errno.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/errno.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/errno.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/errno.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/errno-base.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/stdlib.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/waitflags.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/waitstatus.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/endian.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/endian.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/byteswap.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/byteswap.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/xlocale.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/types.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/time.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/select.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/select.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/sigset.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/time.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/sysmacros.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/pthreadtypes.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/alloca.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/string.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/string.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/string2.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/unistd.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/posix_opt.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/environments.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/confname.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/getopt.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/fcntl.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/fcntl.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/uio.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/stat.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/stat.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/time.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/math.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/huge_val.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/huge_valf.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/huge_vall.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/inf.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/nan.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/mathdef.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/mathcalls.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/ctype.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/socket.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/uio.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/socket.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/limits.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/lib/gcc/powerpc-e300c3-linux-gnu/4.1.2/include-fixed/limits.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/posix1_lim.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/local_lim.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/limits.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/posix2_lim.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/xopen_lim.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/sockaddr.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/socket.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/sockios.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/inttypes.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/stdint.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/assert.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/search.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/arpa/inet.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/netinet/in.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/in.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/netdb.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/rpc/netdb.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/siginfo.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/netdb.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/types.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/types.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/int-ll64.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/bitsperlong.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/bitsperlong.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/posix_types.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/stddef.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/posix_types.h:
+
+../include/linux/if.h:
+
+../include/linux/if_arp.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/netdevice.h:
+
+../include/linux/if_ether.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/if_packet.h:
+
+../include/linux/if_link.h:
+
+../include/linux/netlink.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/socket.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/ethtool.h:
+
+../include/linux/pkt_sched.h:
+
+../include/linux/pkt_cls.h:
+
+../include/linux/gen_stats.h:
+
+../include/linux/ip_mp_alg.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/atm.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/atmapi.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/atmsap.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/atmioc.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/ioctl.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm-generic/ioctl.h:
+
+../include/linux/inetdevice.h:
+
+../include/linux/ipv6.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/byteorder.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/byteorder/big_endian.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/swab.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/asm/swab.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/compiler.h:
+
+../include/linux/snmp.h:
+
+../include/netlink/netlink.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/sys/poll.h:
+
+/opt/freescale/usr/local/gcc-4.1.78-eglibc-2.5.78-1/powerpc-e300c3-linux-gnu/powerpc-e300c3-linux-gnu/libc/usr/include/bits/poll.h:
+
+../include/netlink/netlink-compat.h:
+
+../include/linux/rtnetlink.h:
+
+../include/linux/if_addr.h:
+
+../include/linux/neighbour.h:
+
+../include/linux/genetlink.h:
+
+../include/linux/netfilter/nfnetlink.h:
+
+../include/netlink/version.h:
+
+../include/netlink/errno.h:
+
+../include/netlink/types.h:
+
+../include/netlink/handlers.h:
+
+../include/netlink/netlink-kernel.h:
+
+../include/netlink/socket.h:
+
+../include/netlink/object.h:
+
+../include/netlink/utils.h:
+
+../include/netlink/list.h:
+
+../include/netlink/cache-api.h:
+
+../include/netlink/cache.h:
+
+../include/netlink/msg.h:
+
+../include/netlink/attr.h:
+
+../include/netlink/addr.h:
+
+../include/netlink/data.h:
+
+../include/netlink/route/tc.h:
+
+../include/netlink/route/link.h:
+
+../include/netlink/object-api.h:
+
+../include/netlink-types.h:
+
+../include/netlink/route/qdisc.h:
+
+../include/netlink/route/rtnl.h:
+
+../include/netlink/route/route.h:
+
+../include/netlink/route/nexthop.h:
+
+/home/dell/Desktop/iw3related/libnl321/usr/include/linux/in_route.h:
+
+../include/netlink/route/tc-api.h:
+
+../include/netlink-tc.h:
+
+../include/netlink/route/classifier.h:
+
+../include/netlink/route/cls/police.h:
